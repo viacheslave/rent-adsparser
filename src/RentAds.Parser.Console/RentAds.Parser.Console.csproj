@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -22,14 +22,6 @@
     <ProjectReference Include="..\RentAds.Parser.Jobs\RentAds.Parser.Jobs.csproj" />
     <ProjectReference Include="..\RentAds.Parser.Telegram\RentAds.Parser.Telegram.csproj" />
     <ProjectReference Include="..\RentAds.Parser\RentAds.Parser.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="appsettings.Designer.cs">
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>appsettings.json</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
