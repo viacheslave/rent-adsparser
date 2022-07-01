@@ -27,6 +27,8 @@ internal class ClientProvider : IClientProvider
         case "password":
           Console.Write($"{what}: ");
           return Read();
+        case "session_pathname":
+          return "./external/wtelegram.session";
         default:
           // let WTelegramClient decide the default config
           return null;

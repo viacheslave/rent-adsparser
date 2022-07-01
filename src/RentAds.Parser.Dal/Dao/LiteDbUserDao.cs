@@ -4,7 +4,7 @@ namespace RentAds.Parser.Dal;
 
 internal class LiteDbUserDao : IUserDao
 {
-  private const string _dbUser = "User.db";
+  private const string _dbUser = "./external/User.db";
 
   public LiteDbUserDao()
   {

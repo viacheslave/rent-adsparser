@@ -9,7 +9,7 @@ public class Logger : Microsoft.Extensions.Logging.ILogger
   {
     _logger = new LoggerConfiguration()
       .MinimumLevel.Debug()
-      .WriteTo.File("logs/trace.log", rollingInterval: RollingInterval.Day)
+      .WriteTo.File("./external/logs/trace.log", rollingInterval: RollingInterval.Day)
       .CreateLogger();
   }
 

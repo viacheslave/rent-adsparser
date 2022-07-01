@@ -6,6 +6,8 @@ using RentAds.Parser.Jobs;
 
 Console.WriteLine("Press 'q' to exit");
 
+Directory.CreateDirectory("./external");
+
 IConfiguration configuration = new ConfigurationBuilder()
   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
   .Build();

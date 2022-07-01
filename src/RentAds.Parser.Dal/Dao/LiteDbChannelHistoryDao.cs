@@ -4,7 +4,7 @@ namespace RentAds.Parser.Dal;
 
 internal class LiteDbChannelHistoryDao : IChannelHistoryDao
 {
-  private const string _dbChannelHistory = "ChannelHistory.db";
+  private const string _dbChannelHistory = "./external/ChannelHistory.db";
 
   public LiteDbChannelHistoryDao()
   {

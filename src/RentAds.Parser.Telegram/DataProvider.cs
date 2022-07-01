@@ -55,9 +55,7 @@ internal class DataProvider : IDataProvider
 
     _historyDataProvider.Save(lastRead);
 
-    return posts
-      .DistinctBy(post => post.Identity)
-      .ToList();
+    return posts;
   }
 
   private async Task<IReadOnlyList<Post>> GetPosts(ChannelInfo channelInfo, long? lastId)

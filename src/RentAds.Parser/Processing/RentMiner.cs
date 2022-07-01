@@ -18,6 +18,12 @@ internal class RentMiner : IRentMiner
   public async Task<IReadOnlyCollection<Post>> Collect()
   {
     var posts = await _dataProvider.GetPosts();
+
+    posts = posts
+      .DistinctBy(post => post.Identity)
+      .DistinctBy(post => post.Message)
+      .ToList();
+
     var rentals = RentBuilder.Build(posts);
 
     await _rentSender.SendOutRentals(rentals);
