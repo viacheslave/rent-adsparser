@@ -27,6 +27,10 @@ Currently, the sources are:
 - https://t.me/orenda_lviv
 - https://t.me/Arenda_posutochno_Lviv
 
+## Usage
+
+Currently deployed at https://t.me/lvivrent2bot
+
 ## Limitations
 
 1. Due to the variety in OP style and syntax, oftentimes the attributes are missing.
