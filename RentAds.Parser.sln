@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{80A0FA2C-E683-4E8E-87DF-6E146601CD72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentAds.Parser", "src\RentAds.Parser\RentAds.Parser.csproj", "{0D32128F-F6BF-455A-A2DF-643965431046}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentAds.Parser.Tests", "tests\RentAds.Parser.Tests\RentAds.Parser.Tests.csproj", "{59D816C3-53CC-42BC-B883-B1410171AC52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{4E335818-E245-42C7-A908-D33AC929F613}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentAds.Parser.Jobs", "src\RentAds.Parser.Jobs\RentAds.Parser.Jobs.csproj", "{7F479CB2-A01A-4661-A457-B14831495DD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentAds.Parser.Console", "src\RentAds.Parser.Console\RentAds.Parser.Console.csproj", "{967C719F-B274-4173-A863-CD13D6A00D2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentAds.Parser.Dal", "src\RentAds.Parser.Dal\RentAds.Parser.Dal.csproj", "{9C0A8570-F981-44DB-9166-DB14C7872E30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentAds.Parser.Telegram", "src\RentAds.Parser.Telegram\RentAds.Parser.Telegram.csproj", "{E7570ED7-C3D2-492D-B9E9-549D838A07BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D32128F-F6BF-455A-A2DF-643965431046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D32128F-F6BF-455A-A2DF-643965431046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D32128F-F6BF-455A-A2DF-643965431046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D32128F-F6BF-455A-A2DF-643965431046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D816C3-53CC-42BC-B883-B1410171AC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D816C3-53CC-42BC-B883-B1410171AC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D816C3-53CC-42BC-B883-B1410171AC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D816C3-53CC-42BC-B883-B1410171AC52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F479CB2-A01A-4661-A457-B14831495DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F479CB2-A01A-4661-A457-B14831495DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F479CB2-A01A-4661-A457-B14831495DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F479CB2-A01A-4661-A457-B14831495DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{967C719F-B274-4173-A863-CD13D6A00D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{967C719F-B274-4173-A863-CD13D6A00D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{967C719F-B274-4173-A863-CD13D6A00D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{967C719F-B274-4173-A863-CD13D6A00D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C0A8570-F981-44DB-9166-DB14C7872E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0A8570-F981-44DB-9166-DB14C7872E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0A8570-F981-44DB-9166-DB14C7872E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0A8570-F981-44DB-9166-DB14C7872E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7570ED7-C3D2-492D-B9E9-549D838A07BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7570ED7-C3D2-492D-B9E9-549D838A07BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7570ED7-C3D2-492D-B9E9-549D838A07BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7570ED7-C3D2-492D-B9E9-549D838A07BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{59D816C3-53CC-42BC-B883-B1410171AC52} = {80A0FA2C-E683-4E8E-87DF-6E146601CD72}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {353F0700-3EE3-47F8-AEE8-01B6F6250E01}
+	EndGlobalSection
+EndGlobal
