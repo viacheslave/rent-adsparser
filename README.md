@@ -27,10 +27,6 @@ Currently, the sources are:
 - https://t.me/orenda_lviv
 - https://t.me/Arenda_posutochno_Lviv
 
-## Usage
-
-Currently deployed at https://t.me/lvivrent2bot
-
 ## Limitations
 
 1. Due to the variety in OP style and syntax, oftentimes the attributes are missing.
@@ -39,10 +35,17 @@ Currently deployed at https://t.me/lvivrent2bot
 4. Pictures are not re-posted.
 5. Links to OP don't work if end users aren't able to see OPs. 
 
-## Requirements
+## Requirements and usage
 
-- .NET 6
 - Telegram Account, Application and Bot
+- .NET 6
+- Docker
+
+Docker container requires an external volume where the app stores its DBs, logs and a Telegram session file. The example below uses `external` folder on the filesystem:
+1. Build Docker a image: `docker build . -t rentads`.
+2. Run: `docker run docker run -it --mount type=bind,source="$(pwd)"/external,target=/usr/src/app/external rentads:latest`
+
+Currently, the app is run at https://t.me/lvivrent2bot
 
 ## Settings
 
