@@ -1,8 +1,8 @@
 namespace RentAds.Parser;
 
-public class Post
+public record Post
 {
-  public string Message { get; }
+  public string Message { get; init; }
   public DateTime Date { get; }
 
   public long PostId { get; }

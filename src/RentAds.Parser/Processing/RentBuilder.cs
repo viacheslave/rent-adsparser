@@ -1,3 +1,5 @@
+using System;
+
 namespace RentAds.Parser;
 
 internal static class RentBuilder
@@ -5,6 +7,7 @@ internal static class RentBuilder
   public static IReadOnlyCollection<Rent> Build(IReadOnlyCollection<Post> posts)
   {
     return posts
+      .SelectMany(post => PostSplitter.Split(post))
       .Select(post => Build(post))
       .Where(rent => !rent.IsRejected)
       .OrderBy(rent => rent.Date)
