@@ -65,5 +65,15 @@ public class AddressParserTests
   {
     Assert.Equal(text, AddressParser.Parse(text)?.ToString());
   }
+
+  [Theory]
+  [InlineData("вул. Вол. Великого ", "вул. Вол. Великого")]
+  [InlineData("вул. Вол. Великого.", "вул. Вол. Великого")]
+  [InlineData("вул. Вол. Великого,", "вул. Вол. Великого")]
+  [InlineData("вул. Вол. Великого)", "вул. Вол. Великого")]
+  public void AddressParser_Parses_Expected_Diff(string text, string expected)
+  {
+    Assert.Equal(expected, AddressParser.Parse(text)?.ToString());
+  }
 }
 
