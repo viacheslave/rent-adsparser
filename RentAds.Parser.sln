@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentAds.Parser.Dal", "src\R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentAds.Parser.Telegram", "src\RentAds.Parser.Telegram\RentAds.Parser.Telegram.csproj", "{E7570ED7-C3D2-492D-B9E9-549D838A07BC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentAds.Parser.Integration", "tests\RentAds.Parser.Integration\RentAds.Parser.Integration.csproj", "{AF5EA9BA-65F1-499B-A075-60F4D49565E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,12 +54,17 @@ Global
 		{E7570ED7-C3D2-492D-B9E9-549D838A07BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7570ED7-C3D2-492D-B9E9-549D838A07BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7570ED7-C3D2-492D-B9E9-549D838A07BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5EA9BA-65F1-499B-A075-60F4D49565E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5EA9BA-65F1-499B-A075-60F4D49565E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5EA9BA-65F1-499B-A075-60F4D49565E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5EA9BA-65F1-499B-A075-60F4D49565E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{59D816C3-53CC-42BC-B883-B1410171AC52} = {80A0FA2C-E683-4E8E-87DF-6E146601CD72}
+		{AF5EA9BA-65F1-499B-A075-60F4D49565E4} = {80A0FA2C-E683-4E8E-87DF-6E146601CD72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {353F0700-3EE3-47F8-AEE8-01B6F6250E01}
